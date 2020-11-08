@@ -1,4 +1,4 @@
-rootProject.name='Template'
+rootProject.name='3D Scanner'
 include ':app'
 include ':app-core'
 include ':app-usecases'

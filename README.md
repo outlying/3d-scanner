@@ -1,2 +1,3 @@
-# android-template
-Template for Android applications
+# 3D scanner
+
+For use with Arduino turntable; personal hobby project
