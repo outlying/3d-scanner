@@ -1,0 +1,44 @@
+/*
+ * Shared module configuration for Android application and library modules
+ */
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: rootProject.file("./gradle/dependencies-kotlin.gradle")
+
+android {
+    compileSdkVersion general.android.sdk.compile
+
+    defaultConfig {
+        minSdkVersion general.android.sdk.min
+        targetSdkVersion general.android.sdk.target
+        versionCode general.version.code
+        versionName general.version.name
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+
+    // Kotlin dependencies for Android modules
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.kotlin.coroutines}"
+
+    implementation "androidx.appcompat:appcompat:${versions.androidx.appcompat}"
+    implementation "androidx.core:core-ktx:${versions.androidx.core}"
+
+    testImplementation "junit:junit:${versions.junit4}"
+}
+
+configurations.all {
+    resolutionStrategy.force "junit:junit:${versions.junit4}"
+}

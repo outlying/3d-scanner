@@ -1,0 +1,19 @@
+apply from: rootProject.file("gradle/module-android-application.gradle")
+
+android {
+
+    defaultConfig {
+        applicationId "com.antyzero.paczka"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(':app-viewmodels')
+}

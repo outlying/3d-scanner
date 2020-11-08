@@ -1,0 +1,21 @@
+/*
+ * Android application module shared configuration
+ *
+ * It is assumed that dependencies in this module will be UI oriented
+ */
+
+apply plugin: 'com.android.application'
+apply from: rootProject.file("./gradle/module-android-shared.gradle")
+
+dependencies {
+    implementation "com.google.android.material:material:${versions.google.android.material}"
+    implementation "androidx.constraintlayout:constraintlayout:${versions.androidx.constraintlayout}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${versions.androidx.lifecycle}"
+    implementation "androidx.navigation:navigation-fragment:${versions.androidx.navigation}"
+    implementation "androidx.navigation:navigation-fragment-ktx:${versions.androidx.navigation}"
+    implementation "androidx.navigation:navigation-ui:${versions.androidx.navigation}"
+    implementation "androidx.navigation:navigation-ui-ktx:${versions.androidx.navigation}"
+
+    androidTestImplementation "androidx.test.ext:junit:${versions.androidx.test.extjunit}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${versions.androidx.test.espresso}"
+}

@@ -1,0 +1,5 @@
+apply from: rootProject.file("./gradle/module-java.gradle")
+
+dependencies {
+    implementation project(':app-core')
+}

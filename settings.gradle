@@ -1,0 +1,5 @@
+rootProject.name='Template'
+include ':app'
+include ':app-core'
+include ':app-usecases'
+include ':app-viewmodels'

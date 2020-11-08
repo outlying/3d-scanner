@@ -1,0 +1,6 @@
+/*
+ * Android library module shared configuration
+ */
+
+apply plugin: 'com.android.library'
+apply from: rootProject.file("./gradle/module-android-shared.gradle")
