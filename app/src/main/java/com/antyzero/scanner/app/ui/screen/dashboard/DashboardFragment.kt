@@ -1,4 +1,4 @@
-package com.antyzero.paczka.app.ui.screen.dashboard
+package com.antyzero.scanner.app.ui.screen.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.antyzero.paczka.app.R
+import com.antyzero.scanner.app.R
 
 class DashboardFragment : Fragment() {
 

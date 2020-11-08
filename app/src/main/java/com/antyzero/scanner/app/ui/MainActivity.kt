@@ -1,4 +1,4 @@
-package com.antyzero.paczka.app.ui
+package com.antyzero.scanner.app.ui
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.antyzero.paczka.app.R
+import com.antyzero.scanner.app.R
 
 class MainActivity : AppCompatActivity() {
 

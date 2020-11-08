@@ -3,7 +3,7 @@ apply from: rootProject.file("gradle/module-android-application.gradle")
 android {
 
     defaultConfig {
-        applicationId "com.antyzero.paczka"
+        applicationId "com.antyzero.scanner.app"
     }
 
     buildTypes {
